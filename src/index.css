@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink-900 text-white font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gradient-olive {
+    background: linear-gradient(135deg, #b3bb78 0%, #94a04f 50%, #76823a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .glow-olive {
+    box-shadow: 0 0 80px -20px rgba(118, 130, 58, 0.55);
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(118, 130, 58, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(118, 130, 58, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
